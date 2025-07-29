@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float x = sc.nextFloat();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        System.out.println((int)x);
+        double e =Math.ceil(x);
+        System.out.println((int)e);
+        double f =Math.sqrt(a);
+        System.out.println((int)f);
+        double g =Math.pow(b,c);
+        System.out.println((int)g);
+        
+        
+    }
+}
