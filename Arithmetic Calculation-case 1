@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x= sc.nextInt();
+        int y= sc.nextInt();
+        char a = sc.next().charAt(0);
+
+        switch (a) {
+            case '+':
+                System.out.println("Addition of two number is " + ( x+y ) + ".0");
+                break;
+            case '-':
+                System.out.println("Subtraction of two number is " + (x - y) + ".0");
+                break;
+            case '*':
+                System.out.println("Multiplication of two number is " + (x * y) + ".0");
+                break;
+            case '/':
+                if (y== 0) {
+                    System.out.println("Division by zero is not allowed");
+                } else {
+                    double result = (double) x/ y;
+                    System.out.println("Division of two number is " + result);
+                }
+                break;
+            case '%':
+                if (y == 0) {
+                    System.out.println("Modulo by zero is not allowed");
+                } else {
+                    System.out.println("Modulo of two number is " + (x % y) + ".0");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
