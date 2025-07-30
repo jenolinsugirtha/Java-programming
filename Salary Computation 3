@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float basics=sc.nextFloat();
+        double Hra;
+        double Da,Gross;
+        
+        if(basics<15000){
+            Hra=0.15*basics;
+            Da=0.90*basics;
+        }
+        else{
+            Hra=5000;
+            Da=0.98*basics;
+        }
+        Gross=basics+Hra+Da;
+            System.out.printf("%.2f",Gross);
+      
+    }
+}
