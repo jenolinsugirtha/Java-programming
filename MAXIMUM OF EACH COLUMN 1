@@ -4,20 +4,18 @@ public class MaxInColumns {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        // Read number of rows and columns
+        
         int rows = sc.nextInt();
         int cols = sc.nextInt();
         
         int[][] matrix = new int[rows][cols];
         
-        // Read the 2D array elements
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 matrix[i][j] = sc.nextInt();
             }
         }
         
-        // Find and print the maximum in each column
         for (int col = 0; col < cols; col++) {
             int maxVal = matrix[0][col];
             for (int row = 1; row < rows; row++) {
@@ -26,8 +24,6 @@ public class MaxInColumns {
                 }
             }
             System.out.println("Maximum value in column " + (col + 1) + " is " + maxVal);
-        }
-        
-        sc.close();
+    }
     }
 }
